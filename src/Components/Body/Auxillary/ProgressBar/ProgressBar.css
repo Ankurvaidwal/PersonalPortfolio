@@ -1,0 +1,42 @@
+.skill{
+    margin: 3rem 0rem;
+}
+
+.bar {
+    background: #8BD8BD;
+    display: block;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.skillname{
+    color: #84E1F5;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.skillprogress {
+    height: 10px;
+    float: left;
+    background-color: #fff;
+}
+
+@media (max-width:1000px){
+    .bar{
+      width: 100%;  
+    }
+
+    .skill{
+        margin: 1.8rem auto;
+    }
+
+    .stats{
+        margin-bottom: 0.5rem;
+    }
+}

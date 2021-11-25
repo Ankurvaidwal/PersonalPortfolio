@@ -1,0 +1,184 @@
+.home {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.home-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    position: relative;
+}
+
+.home-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.left-wrapper {
+    height: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.home-tag {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: white;
+}
+
+.home-name {
+    font-size: 4rem;
+    color: #8BD8BD;
+}
+
+.home-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.home-desc {
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #8BD8BD;
+}
+
+.home svg {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+
+.home-btn{
+    width: 8rem;
+    text-decoration: none;
+    padding: 0.6rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.8rem;
+    color: #243665;
+    background: linear-gradient(to bottom right, #8BD8BD, #5cdbaf, #00ffa6);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media(max-width:1000px) {
+    .home-tag {
+        font-size: 1.8rem;
+    }
+ 
+    .home-name {
+        font-size: 3.4rem;
+    }
+
+    .home-title {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .home-desc {
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+}
+
+@media(max-width:760px) {
+    .home {
+        flex-direction: column;
+        height: 90vh;
+        justify-content: space-between;
+    }
+
+    .left-wrapper{
+        height: 100%;
+    }
+    .home-left {
+        width: 80%;
+    }
+
+    .home-right {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .home-name {
+        font-size: 4rem;
+    }
+
+    .home-tag {
+        font-size: 1.4rem;
+    }
+
+    .home-name {
+        font-size: 3rem;
+
+    }
+
+    .home-title {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .home-desc {
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+
+
+}
+
+@media(max-width:500px) {
+
+    .home-left {
+        width: 100%;
+    }
+
+    .home-right {
+        width: 80%;
+    }
+
+    .home-tag {
+        font-size: 1.4rem;
+
+    }
+
+    .home-name {
+        font-size: 3rem;
+
+    }
+
+    .home-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 1rem 0rem;
+    }
+
+    .home-desc {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    .home-btn {
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:400px) {
+    .home-name {
+        font-size: 2.5rem;
+    }
+}
