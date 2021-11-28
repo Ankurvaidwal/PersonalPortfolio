@@ -13,7 +13,7 @@ const About = () => {
                 <h2 className="about-info">Hey, my name is Ankur Vaidwal and I love to create and design websites.
                     I found my love for  websites when I saw user interactive and cool animated
                     websites online. <br />
-                    My other interests are developing android apps and programming.</h2>
+                    My other interests are creating simple web designs and cloning popular websites and programming.</h2>
             </div>
             <div className="about-right" data-aos="fade-down" data-aos-delay="100">
                 <img className="about-img" src={Profiles} alt="" />
