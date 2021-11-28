@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { ProjectContext } from '../Projects'
 import "./Project.css"
 import { GithubFilled } from '@ant-design/icons'
 import AOS from 'aos';
@@ -19,11 +20,12 @@ function useWindowSize() {
     return size;
 }
 
-const Project = ({ title, desc, tags, link, img, dir }) => {
+const Project = () => {
     AOS.init();
     AOS.refresh();
     let screenWidth = useWindowSize();
     let count = 0;
+    const { title, desc, tags, link, img, dir } = useContext(ProjectContext);
     return (
         <div className="project" data-aos={dir === true ? "zoom-in-right" : "zoom-in-left"} data-aos-delay="150">
             <div className="project-card" style={screenWidth <= 1000 ? { flexDirection: 'column' } : dir === true ? { flexDirection: 'row-reverse' } : { flexDirection: "row" }}>

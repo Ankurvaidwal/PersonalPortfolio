@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { createContext } from 'react'
 import Project from './Project/Project'
 import { projectapi } from '../../API/ProjectApi'
 import "./Projects.css"
 
-
+export const ProjectContext = createContext(null);
 const Projects = () => {
     let flag = true;
     const changedir = () => {
         flag = !flag;
         return flag;
     }
+    
     return (
         <div className="projects" id="projects">
             <h1 className="projects-title">Projects <span className="underline"></span></h1>
@@ -19,7 +20,10 @@ const Projects = () => {
             <div className="projects-card">
                 {
                     projectapi.map((items) => (
-                        <Project key={items.id} title={items.title} desc={items.desc} tags={items.tags} link={items.link} img={items.img}  dir={changedir()}  />
+                        <ProjectContext.Provider value={{ title: items.title, desc: items.desc, tags: items.tags, link: items.link, img: items.img, dir: changedir() }}>
+                            <Project key={items.id} />
+                        </ProjectContext.Provider>
+
                     ))
                 }
             </div>
