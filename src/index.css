@@ -40,3 +40,8 @@ body::-webkit-scrollbar-thumb {
   margin: auto;
 
 }
+
+.highlight {
+  color: #8BD8BD !important;
+  font-weight: bold;
+}

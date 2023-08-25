@@ -2,7 +2,7 @@ import React from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import './About.css'
-import Profiles from '../../../Images/Profiles.png'
+import Profiles from '../../../Images/profile.png'
 const About = () => {
     AOS.init();
     return (
@@ -10,7 +10,7 @@ const About = () => {
             <div className="about-left" data-aos="flip-right">
                 <h1 className="about-title">About Me <span className="underline"></span></h1>
 
-                <h2 className="about-info">Hey, my name is Ankur Vaidwal and I love to create and design websites.
+                <h2 className="about-info">Hey, my name is <span className='highlight'>Ankur Vaidwal</span> and I love to create and design websites.
                     I found my love for  websites when I saw user interactive and cool animated
                     websites online. <br />
                     My other interests are creating simple web designs and cloning popular websites and programming.</h2>

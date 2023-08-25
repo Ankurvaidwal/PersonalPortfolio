@@ -1,4 +1,4 @@
-import WeatherTV from '../../Images/WeatherTv.jpeg'
+import chatMe from '../../Images/chatMe.jpeg'
 import YelpCamp from '../../Images/YelpCamp.jpeg'
 import FoodMenu from '../../Images/FoodMenu.jpeg'
 
@@ -13,11 +13,11 @@ export const projectapi = [
     },
     {
         id: 2,
-        title: "WeatherTV",
-        desc: "A simple weather app with tells the weather of any searched city with a custom icon to keep ou updated. Weather is fetched with the help of API from open weather app.",
-        tags: ["Express", "Node", "OpenWeatherApp"],
-        link: "https://github.com/TheAnkur2001/WeatherTv",
-        img: WeatherTV,
+        title: "Chat Me",
+        desc: "A chat application with 'CHAT ENGINE' a chat tool for creating chat app, icons used from  ant-design",
+        tags: ["React", "Node", "react-chat-engine"],
+        link: "https://github.com/Ankurvaidwal/Chatme",
+        img: chatMe,
     },
     {
         id: 3,
